@@ -6,7 +6,7 @@
     <title>Projeto GitHub - Perfis dos Alunos</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f9;
             margin: 0;
             padding: 0;
@@ -14,8 +14,10 @@
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 15px;
+            padding: 20px;
             text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
         }
         main {
             padding: 20px;
@@ -28,69 +30,96 @@
         }
         .perfil {
             background: white;
-            padding: 15px;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 15px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 250px;
+            width: 280px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .perfil:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
         }
         .foto {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            border: 4px solid #4CAF50;
+        }
+        .perfil h3 {
+            margin: 10px 0 5px;
+            color: #333;
+            font-size: 1.2em;
+        }
+        .perfil p {
+            font-size: 0.95em;
+            color: #666;
+            margin: 5px 0;
+        }
+        .perfil a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .perfil a:hover {
+            color: #388E3C;
         }
         .btn {
             background-color: #4CAF50;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
             border: none;
             cursor: pointer;
             text-align: center;
             display: inline-block;
-            margin-top: 10px;
-            border-radius: 5px;
+            margin-top: 20px;
+            border-radius: 6px;
+            font-size: 1em;
+            transition: background 0.3s ease;
         }
         .btn:hover {
-            background-color: #45a049;
+            background-color: #388E3C;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 12px;
             position: fixed;
             bottom: 0;
             width: 100%;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Bem-vindo ao Projeto de Pull Request e Code Review</h1>
+    <h3>Bem-vindo ao Projeto de Pull Request e Code Review</h3>
 </header>
 
 <main>
     <section>
         <h2>Sobre o Projeto</h2>
-        <p>Este projeto tem como objetivo entender o fluxo de trabalho do GitHub, incluindo a criaÃ§Ã£o de branches, commits, Pull Requests e revisÃµes de cÃ³digo.</p>
+        <p>Este projeto tem como objetivo entender o fluxo de trabalho do GitHub, incluindo a criação de branches, commits, Pull Requests e revisões de código.</p>
     </section>
 
     <section>
         <h2>Perfis dos Alunos</h2>
         <div class="perfil-container">
             <div class="perfil">
-                <img class="foto" src="[URL da foto do aluno]" alt="Foto do Aluno">
-                <h3>Nome do Aluno</h3>
-                <p>Curso: [Nome do Curso]</p>
-                <p><a href="[URL do GitHub]" target="_blank">GitHub</a></p>
+                <img class="foto" src="2024_1F_TECH_Gustavo_Henrique_Almeida_Ferreira.JPG-50p.jpg" alt="Foto de Gustavo Henrique Almeida Ferreira">
+                <h3>Gustavo Henrique Almeida Ferreira</h3>
+                <p>Engenharia de Dados e Desenvolvimento de Sistemas</p>
+                <p><a href="https://github.com/Gghproduction" target="_blank">GitHub</a></p>
             </div>
         </div>
-
-        <div class="Raquel Tolomei">
+        <div class="perfil-container">
             <div class="perfil">
                 <img class="foto" src="RaquelTolomei.jpg" alt="Foto do Aluno">
                 <h3>Raquel Tolomei</h3>
@@ -98,7 +127,7 @@
                 <p><a href="https://github.com/RaquelTolomei" target="_blank">GitHub</a></p>
             </div>
         </div>
-        <p>Cada aluno deve copiar e editar um bloco acima com suas informaÃ§Ãµes.</p>
+        <p>Cada aluno deve copiar e editar um bloco acima com suas informações.</p>
     </section>
 
     <button class="btn">Saiba mais sobre GitHub</button>
